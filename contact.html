@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a1a6e">
+    <meta name="description" content="Contactez CEFOPHREST - Centre de Formation en Hôtellerie et Restauration à Yaoundé, Cameroun">
+    <meta name="keywords" content="CEFOPHREST, contact, formation hôtellerie, restauration Yaoundé">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contact - CEFOPHREST</title>
+    <style>
+        .contact-page {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .info-item {
+            display: flex;
+            gap: 15px;
+        }
+        .info-icon {
+            font-size: 1.5rem;
+        }
+        .info-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        .info-content p {
+            color: var(--text-gray);
+        }
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            height: 400px;
+            background: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-gray);
+        }
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .error {
+            color: #e74c3c;
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+        .form-actions {
+            margin-top: 25px;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .newsletter-form input {
+            flex: 1;
+            padding: 12px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 30px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .newsletter-form button {
+            padding: 12px 25px;
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .newsletter-form button:hover {
+            background-color: var(--primary-dark);
+        }
+        @media (max-width: 768px) {
+            .contact-page {
+                grid-template-columns: 1fr;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+        .social-img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+            filter: invert(37%) sepia(95%) saturate(3000%) hue-rotate(20deg) brightness(90%) contrast(99%);
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo3.png" alt="CEFOPHREST Logo">
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="formations.html" class="nav-link">Formations</a></li>
+                    <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-sm">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Contactez-nous</h1>
+                <p class="hero-text highlight-text">N'hésitez pas à nous contacter pour plus d'informations sur nos formations</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nous trouver</h2>
+                <p class="section-subtitle">Nous sommes situés au cœur de Yaoundé, facilement accessibles</p>
+            </div>
+
+            <div class="contact-page">
+                <div class="contact-details">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon"><img src="assets/3916880.png" alt="Adresse" class="contact-img" style=" filter: invert(45%) sepia(98%) saturate(4000%) hue-rotate(5deg) brightness(102%) contrast(105%);"></div>
+                            <div class="info-content">
+                                <h3>Adresse</h3>
+                                <p>Rue de la Formation, 123 Yaoundé, Cameroun</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><img src="assets/contact.png" alt="Téléphone" class="contact-img" style=" filter: invert(45%) sepia(98%) saturate(4000%) hue-rotate(5deg) brightness(102%) contrast(105%);"></div>
+                            <div class="info-content">
+                                <h3>Téléphone</h3>
+                                <p>(+237) 654 753 999</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><img src="assets/mail.png" alt="Email" class="contact-img"style=" filter: invert(45%) sepia(98%) saturate(4000%) hue-rotate(5deg) brightness(102%) contrast(105%);"></div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p>info@cefront.hrest.cm</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><img src="assets/duree.png" alt="Horaires" class="contact-img" style=" filter: invert(45%) sepia(98%) saturate(4000%) hue-rotate(5deg) brightness(102%) contrast(105%);"></div>
+                            <div class="info-content">
+                                <h3>Horaires</h3>
+                                <p>Lundi - Vendredi: 8h - 17h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-newsletter">
+                        <h3>Réseaux sociaux</h3>
+                        <div style="display: flex; gap: 20px; margin-top: 15px;">
+                            <a href="https://www.facebook.com/hotellerie.restauration12" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/logo-facebook-facebook-logo-png-transparent-svg-vector-bie-supply-18.png" alt="Facebook" class="social-img" style=" filter: invert(45%) sepia(98%) saturate(4000%) hue-rotate(5deg) brightness(102%) contrast(105%);">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Contactez-nous</h3>
+                    <form id="contact-form" action="send_email.php" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom & Prénom *</label>
+                                <input type="text" id="name" name="name" placeholder="Entrez votre nom complet" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        </div>
+                        <div id="form-response" role="alert" aria-live="assertive" tabindex="-1" style="margin-top: 20px; padding: 15px; border-radius: 8px; display: none;"></div>
+                    </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/logo3.png" alt="CEFOPHREST Logo">
+                    </div>
+                    <p class="footer-text">Centre de Formation en Hôtellerie et Restauration<br>Formant des professionnels depuis plus de 10 ans</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Liens rapides</h4>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="contact-info">
+                        <li><span class="contact-icon"><img src="assets/3916880.png" alt="Adresse" class="contact-img"></span> Rue de la Formation, 123 Yaoundé, Cameroun</li>
+                        <li><span class="contact-icon"><img src="assets/contact.png" alt="Téléphone" class="contact-img"></span> (+237) 654 753 999</li>
+                        <li><span class="contact-icon"><img src="assets/mail.png" alt="Email" class="contact-img"></span> info@cefront.hrest.cm</li>
+                        <li><span class="contact-icon"><img src="assets/duree.png" alt="Horaires" class="contact-img"></span> Lundi - Vendredi: 8h - 17h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 CEFOPHREST - Centre de Formation en Hôtellerie et Restauration. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+    function showResponse(message, isSuccess) {
+        const responseDiv = document.getElementById('form-response');
+        if (!responseDiv) return;
+        responseDiv.style.display = 'block';
+        responseDiv.style.backgroundColor = isSuccess ? '#d4edda' : '#f8d7da';
+        responseDiv.style.color = isSuccess ? '#155724' : '#721c24';
+        responseDiv.textContent = message;
+        responseDiv.scrollIntoView({behavior: 'smooth', block: 'center'});
+        responseDiv.focus({preventScroll: true});
+    }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const status = urlParams.get('status');
+    if (status === 'sent') {
+        showResponse('Message envoyé avec succès!', true);
+    } else if (status === 'error') {
+        const msg = urlParams.get('msg') || 'Erreur lors de l\'envoi du message.';
+        showResponse(msg, false);
+    }
+
+    const form = document.getElementById('contact-form');
+    if (form) {
+        form.addEventListener('submit', function() {
+            const btn = this.querySelector('button[type="submit"]');
+            btn.disabled = true;
+            btn.textContent = 'Envoi en cours...';
+        });
+    }
+    </script>
+</body>
+</html>

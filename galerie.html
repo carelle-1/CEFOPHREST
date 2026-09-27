@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a1a6e">
+    <meta name="description" content="CEFOPHREST - Galerie photos du centre de formation en hôtellerie et restauration">
+    <meta name="keywords" content="CEFOPHREST, galerie, formation hôtellerie, photos restauration">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Galerie - CEFOPHREST</title>
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 26, 110, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .gallery-overlay span {
+            color: var(--text-light);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo3.png" alt="CEFOPHREST Logo">
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="formations.html" class="nav-link">Formations</a></li>
+                    <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+                    <li><a href="galerie.html" class="nav-link active">Galerie</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-sm">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Galerie</h1>
+                <p class="hero-text highlight-text">Découvrez les moments forts de notre centre de formation</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre galerie photo</h2>
+                <p class="section-subtitle">Des photos capturées lors de nos formations et événements</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/gallery1.jpg" alt="Formation en cuisine">
+                    <div class="gallery-overlay">
+                        <span>Formation en cuisine</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery2.jpg" alt="Service en salle">
+                    <div class="gallery-overlay">
+                        <span>Service en salle</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery3.jpg" alt="Cérémonie de remise des diplômes">
+                    <div class="gallery-overlay">
+                        <span>Cérémonie de remise des diplômes</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery4.jpg" alt="Laboratoire de restauration">
+                    <div class="gallery-overlay">
+                        <span>Laboratoire de restauration</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery5.jpg" alt="Conférence avec expert">
+                    <div class="gallery-overlay">
+                        <span>Conférence avec expert</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery6.jpg" alt="Événement spécial">
+                    <div class="gallery-overlay">
+                        <span>Événement spécial</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery7.jpg" alt="Stage en entreprise">
+                    <div class="gallery-overlay">
+                        <span>Stage en entreprise</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery8.jpg" alt="Concours étudiant">
+                    <div class="gallery-overlay">
+                        <span>Concours étudiant</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets\IMG-20260816-WA0048.jpg" alt="Concours étudiant">
+                    <div class="gallery-overlay">
+                        <span>travail en équipe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/logo3.png" alt="CEFOPHREST Logo">
+                    </div>
+                    <p class="footer-text">Centre de Formation en Hôtellerie et Restauration<br>Formant des professionnels depuis plus de 10 ans</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Liens rapides</h4>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="contact-info">
+                        <li><span class="contact-icon"><img src="assets/3916880.png" alt="Adresse" class="contact-img"></span> Rue de la Formation, 123 Yaoundé, Cameroun</li>
+                        <li><span class="contact-icon"><img src="assets/contact.png" alt="Téléphone" class="contact-img"></span> (+237) 654 753 999</li>
+                        <li><span class="contact-icon"><img src="assets/mail.png" alt="Email" class="contact-img"></span> info@cefront.hrest.cm</li>
+                        <li><span class="contact-icon"><img src="assets/duree.png" alt="Horaires" class="contact-img"></span> Lundi - Vendredi: 8h - 17h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 CEFOPHREST - Centre de Formation en Hôtellerie et Restauration. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
