@@ -8,7 +8,8 @@
     <meta name="keywords" content="CEFOPHREST, contact, formation hôtellerie, restauration Yaoundé">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/logo3.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
     <title>Contact - CEFOPHREST</title>
     <style>
         .contact-page {
@@ -309,5 +310,8 @@
         });
     }
     </script>
+
+    <script src="assets/js/floating-widgets.js"></script>
+    <script src="assets/js/chatbot.js"></script>
 </body>
 </html>
