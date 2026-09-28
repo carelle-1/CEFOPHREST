@@ -138,11 +138,12 @@
             </div>
             <nav class="nav" id="nav">
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="formations.html" class="nav-link">Formations</a></li>
-                    <li><a href="actualites.html" class="nav-link">Actualités</a></li>
-                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
-                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li><a href="index.html" class="nav-link"><img src="assets/home.png" alt="Accueil" class="nav-icon"> Accueil</a></li>
+                    <li><a href="about.html" class="nav-link"><img src="assets/about.png" alt="À propos" class="nav-icon"> À propos</a></li>
+                    <li><a href="formations.html" class="nav-link"><img src="assets/3917390.png" alt="Formations" class="nav-icon"> Formations</a></li>
+                    <li><a href="actualites.html" class="nav-link"><img src="assets/3917625.png" alt="Actualités" class="nav-icon"> Actualités</a></li>
+                    <li><a href="galerie.html" class="nav-link"><img src="assets/3917317.png" alt="Galerie" class="nav-icon"> Galerie</a></li>
+                    <li><a href="contact.html" class="nav-link active"><img src="assets/contact.png" alt="Contact" class="nav-icon"> Contact</a></li>
                 </ul>
                 <div class="nav-toggle" id="nav-toggle">
                     <span></span>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a1a6e">
+    <meta name="description" content="À propos de CEFOPHREST - Centre de Formation en Hôtellerie et Restauration">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>À propos - CEFOPHREST</title>
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .team-card {
+            background: var(--light-gray);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        .team-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 4px solid var(--secondary-color);
+        }
+        .team-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        .team-card .team-title {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .value-card {
+            background: var(--light-gray);
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            border-top: 3px solid var(--secondary-color);
+        }
+        .value-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .value-card p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+        .about-content .section-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .about-text {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .mission-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--text-light);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .mission-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .mission-box p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo3.png" alt="CEFOPHREST Logo">
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link"><img src="assets/home.png" alt="Accueil" class="nav-icon"> Accueil</a></li>
+                    <li><a href="about.html" class="nav-link active"><img src="assets/about.png" alt="À propos" class="nav-icon"> À propos</a></li>
+                    <li><a href="formations.html" class="nav-link"><img src="assets/3917390.png" alt="Formations" class="nav-icon"> Formations</a></li>
+                    <li><a href="actualites.html" class="nav-link"><img src="assets/3917625.png" alt="Actualités" class="nav-icon"> Actualités</a></li>
+                    <li><a href="galerie.html" class="nav-link"><img src="assets/3917317.png" alt="Galerie" class="nav-icon"> Galerie</a></li>
+                    <li><a href="contact.html" class="nav-link"><img src="assets/contact.png" alt="Contact" class="nav-icon"> Contact</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-sm">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">À propos de CEFOPHREST</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre histoire</h2>
+            </div>
+            <div class="history-grid">
+                <div class="history-image">
+                    <img src="assets/file_000000009d0c8210b528feb0c02e4a06.png" alt="Notre histoire">
+                </div>
+                <div>
+                    <p>Fondé en 2014, CEFOPHREST (Centre de Formation en Hôtellerie et Restauration) est devenu un pôle d'excellence dans le domaine de la formation professionnelle pour l'industrie de l'hôtellerie et de la restauration au Cameroun.</p>
+                    <p>Depuis plus de 10 ans, nous formons des professionnels passionnés, équipés des dernières techniques et technologies du secteur. Notre centre accueille des étudiants locaux et internationaux dans un environnement moderne et professionnel.</p>
+                    <p>Nos programmes sont conçus en collaboration avec des experts du secteur et des partenaires internationaux pour garantir une formation de qualité reconnue par les employeurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre mission</h2>
+            </div>
+            <div class="mission-box">
+                <h3>Former les leaders de demain</h3>
+                <p>"Former des professionnels exceptionnels qui deviendront les ambassadeurs de l'excellence dans l'hôtellerie et la restauration, en combinant tradition, innovation et service de qualité."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos valeurs</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Excellence</h3>
+                    <p>Nous nous engageons à fournir une formation de la plus haute qualité avec des résultats exceptionnels.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Innovation</h3>
+                    <p>Nous adoptons les dernières technologies et méthodes pédagogiques pour une formation moderne.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Professionnalisme</h3>
+                    <p>Nous cultivons le respect, l'intégrité et les normes élevées dans tout ce que nous faisons.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Internationalisation</h3>
+                    <p>Nous ouvrons nos portes à la diversité culturelle et aux perspectives mondiales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre équipe</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="assets/team1.jpg" alt="Directeur" class="team-img">
+                    <h3>Dr. Marie Njeri</h3>
+                    <p class="team-title">Directrice Générale</p>
+                    <p>Expertise en gestion hôtelière internationale avec 15 ans d'expérience.</p>
+                </div>
+                <div class="team-card">
+                    <img src="assets/team2.jpg" alt="Chef Pédagogique" class="team-img">
+                    <h3>Chef Patron Martin</h3>
+                    <p class="team-title">Chef Pédagogique Culinaire</p>
+                    <p>Master en cuisine française, 20 ans d'expérience en restauration haut de gamme.</p>
+                </div>
+                <div class="team-card">
+                    <img src="assets/team3.jpg" alt="Coordinateur" class="team-img">
+                    <h3>Sarah Malone</h3>
+                    <p class="team-title">Coordonnatrice Académique</p>
+                    <p>Spécialiste en pédagogie professionnelle et insertion professionnelle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/logo3.png" alt="CEFOPHREST Logo">
+                    </div>
+                    <p class="footer-text">Centre de Formation en Hôtellerie et Restauration<br>Formant des professionnels depuis plus de 10 ans</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Liens rapides</h4>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="contact-info">
+                        <li><span class="contact-icon"><img src="assets/3916880.png" alt="Adresse" class="contact-img"></span> Rue de la Formation, 123 Yaoundé, Cameroun</li>
+                        <li><span class="contact-icon"><img src="assets/contact.png" alt="Téléphone" class="contact-img"></span> (+237) 654 753 999</li>
+                        <li><span class="contact-icon"><img src="assets/mail.png" alt="Email" class="contact-img"></span> info@cefront.hrest.cm</li>
+                        <li><span class="contact-icon"><img src="assets/duree.png" alt="Horaires" class="contact-img"></span> Lundi - Vendredi: 8h - 17h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 CEFOPHREST - Centre de Formation en Hôtellerie et Restauration. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
