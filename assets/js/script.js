@@ -247,23 +247,55 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Animate elements on scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+// Reveal section content as it enters the viewport.
+const revealTargets = document.querySelectorAll(
+    '.section .container > *, .stats-grid, .quick-action-grid, .footer-grid'
+);
+const staggeredRevealTargets = [
+    '.about-features',
+    '.cta-split',
+    '.footer-grid',
+    '.gallery-grid',
+    '.history-grid',
+    '.mission-grid',
+    '.news-grid',
+    '.programs-grid',
+    '.quick-action-grid',
+    '.stats-grid',
+    '.team-grid',
+    '.testimonials-grid',
+    '.values-grid'
+].join(', ');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animated');
-        }
-    });
-}, observerOptions);
+revealTargets.forEach(target => {
+    target.classList.add('scroll-reveal');
 
-document.querySelectorAll('.section').forEach(section => {
-    observer.observe(section);
+    if (target.matches(staggeredRevealTargets)) {
+        Array.from(target.children).forEach((item, index) => {
+            item.classList.add('scroll-reveal-item');
+            item.style.setProperty('--reveal-order', Math.min(index, 5));
+        });
+    }
 });
+
+if (!('IntersectionObserver' in window) || prefersReducedMotion) {
+    revealTargets.forEach(target => target.classList.add('is-visible'));
+} else {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealTargets.forEach(target => revealObserver.observe(target));
+}
 
 // Back to top button
 const backToTopBtn = document.getElementById('back-to-top');
